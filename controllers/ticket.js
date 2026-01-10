@@ -45,7 +45,7 @@ exports.contactAdmin = async (req, res) => {
       email === 'kariellebelle@gmail.com' ||
       !email.includes('@')
         ? 55 * 1000
-        : 90 * 1000;
+        : 80 * 1000;
 
     // ? 25 * 1000
     // : 55 * 1000;
